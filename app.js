@@ -112,7 +112,8 @@ const renderWeather = (weath) => {
   screenCardTotal.push(name.toUpperCase());
 
   const screen = document.querySelector("#screen");
-  screen.innerHTML += `
+  screen.innerHTML =
+    `
     <div class="col-md-6 col-lg-4 col-xl-2 card shadow-lg" style="width: 18rem;">
         <ul class="list-group list-group-flush text-center">
             <li class="list-group-item fs-5 fw-bold d-flex justify-content-between align-items-center text-uppercase"><div>${name}</div> <div><span class="text-danger text-end">${country} </span> <span><i class="fa-solid fa-x ms-1"></i></span></div></li>
@@ -146,5 +147,5 @@ const renderWeather = (weath) => {
             
         </ul>
     </div>
-  `;
+  ` + screen.innerHTML;
 };
