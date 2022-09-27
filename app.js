@@ -32,7 +32,7 @@ searchBtn.addEventListener("click", () => {
         inputBox.value = "";
       }
     }, 200);
-  } else if (screenCardTotal.length < 4) {
+  } else if (screenCardTotal.length < 6) {
     if (!inputBox.value) {
       counter = 0;
       const intervalMessage = setInterval(() => {
@@ -114,7 +114,7 @@ const renderWeather = (weath) => {
   const screen = document.querySelector("#screen");
   screen.innerHTML =
     `
-    <div class="col-md-6 col-lg-4 col-xl-2 card shadow-lg" style="width: 18rem;">
+    <div class="col-md-4 col-lg-3 card shadow-lg" style="width: 18rem;">
         <ul class="list-group list-group-flush text-center">
             <li class="list-group-item fs-5 fw-bold d-flex justify-content-between align-items-center text-uppercase"><div>${name}</div> <div><span class="text-danger text-end">${country} </span> <span><i class="fa-solid fa-x ms-1"></i></span></div></li>
             <li class="list-group-item fw-bold"><div class=" display-1 fw-bold">${(
